@@ -25,8 +25,7 @@ public class SignatureVerificationRsaPssPoc {
                 "content-digest": sha-512=:WZDPaVn/7XgHaAy8pmojAkGWoRx2UFChF41A2svX+TaPm+AbwAgBWnrIiYllu7BNNyealdVLvRwEmTHWXvJwew==:
                 "content-length": 18
                 "content-type": application/json
-                "@signature-params": ("@method" "@authority" "@path" "content-digest" "content-length" "content-type");created=1618884473;keyid="test-key-rsa-pss"
-                """;
+                "@signature-params": ("@method" "@authority" "@path" "content-digest" "content-length" "content-type");created=1618884473;keyid="test-key-rsa-pss\"""";
 
         var signer = getSigner();
         signer.update(signatureInput.getBytes());
